@@ -115,7 +115,7 @@ export const ButtonSecondary = styled(Base)`
   background-color: ${({ theme }) => theme.primary5};
   color: ${({ theme }) => theme.primaryText1};
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 0.15rem;
   padding: ${({ padding }) => (padding ? padding : '10px')};
 
   &:focus {

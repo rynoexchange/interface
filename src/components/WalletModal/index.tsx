@@ -210,7 +210,7 @@ export default function WalletModal({
               link={option.href}
               header={option.name}
               subheader={null}
-              icon={require('../../assets/images/' + option.iconName)}
+              icon={require('../../assets/images/' + option.iconName)?.default}
             />
           )
         }
