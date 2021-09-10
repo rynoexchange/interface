@@ -121,8 +121,7 @@ export default function WalletModal({
   pendingTransactions: string[] // hashes of pending
   confirmedTransactions: string[] // hashes of confirmed
 }) {
-  const { active, account, connector, activate, error, chainId } = useWeb3React()
-  console.log({ chainId })
+  const { active, account, connector, activate, error } = useWeb3React()
 
   const [walletView, setWalletView] = useState(WALLET_VIEWS.ACCOUNT)
 
