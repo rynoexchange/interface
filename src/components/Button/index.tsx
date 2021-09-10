@@ -5,6 +5,7 @@ import { darken, lighten } from 'polished'
 import { RowBetween } from '../Row'
 import { ChevronDown } from 'react-feather'
 import { Button as RebassButton, ButtonProps } from 'rebass/styled-components'
+import { fontMono } from '../../theme'
 
 const Base = styled(RebassButton)<{
   padding?: string
@@ -12,9 +13,10 @@ const Base = styled(RebassButton)<{
   borderRadius?: string
   altDisabledStyle?: boolean
 }>`
-  padding: ${({ padding }) => (padding ? padding : '18px')};
+  padding: ${({ padding }) => (padding ? padding : '16px')};
   width: ${({ width }) => (width ? width : '100%')};
   font-weight: 500;
+  font-family: ${fontMono};
   text-align: center;
   border-radius: 0.2rem;
   border-radius: ${({ borderRadius }) => borderRadius && borderRadius};

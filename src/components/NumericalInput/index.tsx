@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { fontMono } from '../../theme'
 import { escapeRegExp } from '../../utils'
 
 const StyledInput = styled.input<{ error?: boolean; fontSize?: string; align?: string }>`
@@ -18,7 +19,7 @@ const StyledInput = styled.input<{ error?: boolean; fontSize?: string; align?: s
   text-overflow: ellipsis;
   padding: 0px;
   -webkit-appearance: textfield;
-  font-family: Roboto Mono;
+  font-family: ${fontMono};
 
   ::-webkit-search-decoration {
     -webkit-appearance: none;

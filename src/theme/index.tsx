@@ -33,6 +33,8 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
 const white = '#FFFFFF'
 const black = '#000000'
 
+export const fontMono = 'IBM Plex Mono, monospace'
+
 export function colors(darkMode: boolean): Colors {
   return {
     // base
@@ -47,19 +49,19 @@ export function colors(darkMode: boolean): Colors {
     text5: darkMode ? '#2C2F36' : '#E0E7FF',
 
     // backgrounds / greys
-    bg1: darkMode ? '#212429' : '#FFFFFF',
+    bg1: darkMode ? '#222222' : '#FFFFFF',
     bg2: darkMode ? '#151515' : '#fdfcfa',
-    bg3: darkMode ? '#40444F' : '#E0E7FF',
-    bg4: darkMode ? '#565A69' : '#CED0D9',
-    bg5: darkMode ? '#6C7284' : '#6366F1',
+    bg3: darkMode ? '#454545' : '#E0E7FF',
+    bg4: darkMode ? '#555555' : '#CED0D9',
+    bg5: darkMode ? '#656565' : '#6366F1',
 
     //specialty colors
     modalBG: darkMode ? 'rgba(0,0,0,.425)' : 'rgba(0,0,0,0.3)',
     advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#2172E5' : '#4F46E5',
-    primary2: darkMode ? '#3680E7' : '#4F46E5',
+    primary1: darkMode ? '#be3838' : '#be3838',
+    primary2: darkMode ? '#3680E7' : '#be3838',
     primary3: darkMode ? '#4D8FEA' : '#6366F1',
     primary4: darkMode ? '#376bad70' : '#C7D2FE',
     primary5: darkMode ? '#153d6f70' : '#E0E7FF',
@@ -175,7 +177,7 @@ html, input, textarea, button {
 }
 @supports (font-variation-settings: normal) {
   html, input, textarea, button {
-    font-family: 'Inter var', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 }
 

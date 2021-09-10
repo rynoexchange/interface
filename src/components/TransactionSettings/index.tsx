@@ -23,7 +23,7 @@ const FancyButton = styled.button`
   color: ${({ theme }) => theme.text1};
   align-items: center;
   height: 2rem;
-  border-radius: 36px;
+  border-radius: 0.15rem;
   font-size: 12px;
   width: auto;
   min-width: 3rem;
