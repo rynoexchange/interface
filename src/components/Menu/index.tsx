@@ -93,7 +93,7 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://info.fliple.org/">
+          <MenuItem id="link" href="https://info.ryno.exchange/">
             <PieChart size={14} />
             {t('analytics')}
           </MenuItem>

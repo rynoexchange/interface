@@ -26,9 +26,9 @@ const store = configureStore({
   },
   middleware: [
     ...getDefaultMiddleware({ thunk: false }),
-    save({ namespace: 'redux_fliple_data_v1', states: PERSISTED_KEYS })
+    save({ namespace: 'redux_ryno_data_v1', states: PERSISTED_KEYS })
   ],
-  preloadedState: load({ namespace: 'redux_fliple_data_v1', states: PERSISTED_KEYS })
+  preloadedState: load({ namespace: 'redux_ryno_data_v1', states: PERSISTED_KEYS })
 })
 
 store.dispatch(updateVersion())

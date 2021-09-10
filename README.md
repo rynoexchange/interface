@@ -1,10 +1,10 @@
-# Fliple Exchange Interface
+# Ryno Exchange Interface
 
-Forked from [Uniswap/uniswap-interface](https://github.com/Uniswap/uniswap-interface), and updated to work with Fliple contracts.
+Forked from [Uniswap/uniswap-interface](https://github.com/Uniswap/uniswap-interface), and updated to work with Ryno contracts.
 
-## Accessing the Fliple Exchange Interface
+## Accessing the Ryno Exchange Interface
 
-To access the Fliple Exchange, visit [app.fliple.org](https://app.fliple.org/).
+To access the Ryno Exchange, visit [app.ryno.exchange](https://app.ryno.exchange/).
 
 ## Development
 

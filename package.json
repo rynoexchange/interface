@@ -1,6 +1,6 @@
 {
-  "name": "@fliple/interface",
-  "description": "Fliple Interface",
+  "name": "@ryno/interface",
+  "description": "Ryno Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {
