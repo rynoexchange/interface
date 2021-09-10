@@ -120,7 +120,7 @@ export default function RemoveLiquidity({
     ]
 
     const domain = {
-      name: 'Fliple LT',
+      name: 'Ryno LT',
       version: '1',
       chainId: chainId,
       verifyingContract: pair.liquidityToken.address

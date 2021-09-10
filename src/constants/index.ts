@@ -4,7 +4,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 import { injected, walletconnect } from '../connectors'
 
 export const ROUTER_ADDRESS = {
-  [ChainId.POA]: '0x3D8B4c42EbB9bA0336358C64f1bFE178DFE52623',
+  [ChainId.POA]: '0xf3B31F0A1D3095BE0C51dBA945FBBBF385dc5045',
   [ChainId.SOKOL]: '0x816E75B3327F1Db55cB17F3808c7fBF38B8413A0'
 }
 

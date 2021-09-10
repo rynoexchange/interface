@@ -5,8 +5,8 @@ import { Text } from 'rebass'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/images/fliple-logo.png'
-import LogoDark from '../../assets/images/fliple-logo-dark.png'
+import LogoWhite from '../../assets/svg/logo-white.svg'
+import LogoDark from '../../assets/svg/logo-dark.svg'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
@@ -65,7 +65,7 @@ const AccountElement = styled.div<{ active: boolean }>`
   flex-direction: row;
   align-items: center;
   background-color: ${({ theme, active }) => (!active ? theme.bg1 : theme.bg3)};
-  border-radius: 12px;
+  border-radius: 0.2rem;
   white-space: nowrap;
   width: 100%;
 
@@ -84,7 +84,7 @@ const TestnetWrapper = styled.div`
 const NetworkCard = styled(YellowCard)`
   width: fit-content;
   margin-right: 10px;
-  border-radius: 12px;
+  border-radius: 0.2rem;
   padding: 8px 12px;
 `
 
@@ -144,7 +144,7 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img style={{ height: 20 }} src={isDark ? LogoDark : Logo} alt="logo" />
+              <img style={{ height: 24 }} src={isDark ? LogoWhite : LogoDark} alt="logo" />
             </UniIcon>
           </Title>
         </HeaderElement>

@@ -54,7 +54,7 @@ const StyledMenuButton = styled.button`
   background-color: ${({ theme }) => theme.bg3};
 
   padding: 0.15rem 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 
   :hover,
   :focus {
@@ -92,7 +92,7 @@ const MenuFlyout = styled.span`
 
   border: 1px solid ${({ theme }) => theme.bg3};
 
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
