@@ -3,7 +3,7 @@ import { InjectedConnector } from '@web3-react/injected-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { ChainId } from '../sdk'
 import { NetworkConnector } from './NetworkConnector'
-import fetchIntercept from 'fetch-intercept'
+// import fetchIntercept from 'fetch-intercept'
 
 const NETWORK_URLS = {
   [ChainId.POA]: 'https://core.poa.network',
@@ -30,31 +30,5 @@ export const walletconnect = new WalletConnectConnector({
   rpc: NETWORK_URLS,
   bridge: 'https://bridge.walletconnect.org',
   qrcode: true,
-  pollingInterval: 5000
+  chainId: 99
 })
-
-// hot fix
-// https://github.com/MetaMask/web3-provider-engine/blob/main/index.js
-// "skipCache: true" causes problems with poa rpc.
-
-fetchIntercept.register({
-  request: function(url, config) {
-    try {
-      const body = JSON.parse(config.body)
-      delete body[0].skipCache
-      config.body = JSON.stringify(body)
-    } catch (e) {}
-
-    return [url, config]
-  }
-})
-
-const send = window.XMLHttpRequest.prototype.send
-window.XMLHttpRequest.prototype.send = function(...rest) {
-  try {
-    const body = JSON.parse(rest[0]?.toString() || '')
-    delete body.skipCache
-    rest[0] = JSON.stringify(body)
-  } catch (e) {}
-  return send.call(this, ...rest)
-}
